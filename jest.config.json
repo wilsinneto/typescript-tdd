@@ -1,0 +1,23 @@
+{
+  "displayName": "and2and-test",
+  "verbose": true,
+  "rootDir": ".",
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "testMatch": ["<rootDir>/test/**/*.test.ts"],
+  "testPathIgnorePatterns": [
+    "<rootDir>[/\\\\](dist|coverage|node_modules)[/\\\\]",
+    "_\\w*.\\w+$"
+  ],
+  "transformIgnorePatterns": ["<rootDir>/node_modules/"],
+  "clearMocks": true,
+  "moduleNameMapper": {
+    "@src/(.*)": "<rootDir>/src/$1",
+    "@test/(.*)": "<rootDir>/test/$1"
+  },
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js"
+  ]
+}
