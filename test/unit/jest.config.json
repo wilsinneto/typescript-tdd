@@ -1,10 +1,11 @@
 {
-  "displayName": "and2and-test",
+  "rootDir": "../../",
   "verbose": true,
-  "rootDir": ".",
+  "displayName": "root-tests",
   "preset": "ts-jest",
   "testEnvironment": "node",
-  "testMatch": ["<rootDir>/test/functional/**/*.test.ts"],
+  "setupFilesAfterEnv": ["<rootDir>/test/unit/jest-setup.ts"],
+  "testMatch": ["<rootDir>/test/unit/**/*.test.ts"],
   "testPathIgnorePatterns": [
     "<rootDir>[/\\\\](dist|coverage|node_modules)[/\\\\]",
     "_\\w*.\\w+$"
